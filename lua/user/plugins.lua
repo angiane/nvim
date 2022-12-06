@@ -67,7 +67,7 @@ return packer.startup(function(use)
   use { "rafamadriz/friendly-snippets" }
 
   -- LSP
-	use { "neovim/nvim-lspconfig" }
+  use { "neovim/nvim-lspconfig" }
   -- simple to use language server installer
   use { "williamboman/mason.nvim"}
   use { "williamboman/mason-lspconfig.nvim" }
@@ -76,13 +76,17 @@ return packer.startup(function(use)
   -- automatically highlighting other uses of the word under the cursor using either LSP
   use { "RRethy/vim-illuminate" }
 
-  -- Treesitter
-	use {	"nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
+  -- Telescope 
+  -- Dependencies: pacman -S ripgrep 
+  use { "nvim-telescope/telescope.nvim" }
+
+  -- Treesitteruse
+  use {	"nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
   use { "p00f/nvim-ts-rainbow" }
 
   -- Automatically set up your configuration after cloning packer.nvim
-	-- Put this at the end after all plugins
-	if PACKER_BOOTSTRAP then
-		require("packer").sync()
-	end
+  -- Put this at the end after all plugins
+  if PACKER_BOOTSTRAP then
+    require("packer").sync()
+  end
 end)

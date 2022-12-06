@@ -36,6 +36,7 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
+keymap("n", "<leader>d", ":bd<CR>", opts)
 
 -- Move text up and down
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi<Esc>", opts)
@@ -71,3 +72,7 @@ keymap("x", "Kj", "<ESC>", opts)
 -- Press jk fast to exit Command mode 
 keymap("c", "jk", "<ESC>", opts)
 keymap("c", "Kj", "<ESC>", opts)
+
+-- Telescope
+keymap("n", "<leader>f", ":Telescope find_files<CR>", opts)
+keymap("n", "<leader>c", ":Telescope live_grep<CR>", opts)
