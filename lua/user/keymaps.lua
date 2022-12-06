@@ -25,6 +25,8 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
+keymap("n", "<leader>e", ":Lex 20<cr>", opts)
+
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
 keymap("n", "<C-Down>", ":resize -2<CR>", opts)
@@ -41,13 +43,16 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi<Esc>", opts)
 
 -- Insert --
 -- Press jk fast to exit insert mode 
-keymap("i", "JK", "<ESC>", opts)
-keymap("i", "KJ", "<ESC>", opts)
+keymap("i", "jk", "<ESC>", opts)
+keymap("i", "Kj", "<ESC>", opts)
 
 -- Visual --
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
+-- Press jk fast to exit Visual mode 
+keymap("v", "jk", "<ESC>", opts)
+keymap("v", "Kj", "<ESC>", opts)
 
 -- Move text up and down
 keymap("v", "<A-j>", ":m .+1<CR>==", opts)
@@ -58,3 +63,11 @@ keymap("v", "p", '"_dP', opts)
 -- Move text up and down
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
+-- Press jk fast to exit Visual Block mode 
+keymap("x", "jk", "<ESC>", opts)
+keymap("x", "Kj", "<ESC>", opts)
+
+-- command_mode
+-- Press jk fast to exit Command mode 
+keymap("c", "jk", "<ESC>", opts)
+keymap("c", "Kj", "<ESC>", opts)
