@@ -85,3 +85,6 @@ keymap('n', '<leader>hp', ":Gitsigns prev_hunk<CR>",        opts)
 keymap('n', '<leader>hn', ":Gitsigns next_hunk<CR>",        opts)
 keymap('n', '<leader>hb', ":Gitsigns blame_line<CR>",       opts)
 keymap('n', '<leader>hd', ":Gitsigns diffthis<CR>",         opts)
+
+-- Markdown Preview
+keymap('n', '<C-s>', ":MarkdownPreview<CR>", opts)

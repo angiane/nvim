@@ -69,6 +69,7 @@ return packer.startup(function(use)
   -- LSP
   use { "neovim/nvim-lspconfig" }
   -- simple to use language server installer
+  -- Dependencies: sudo pacman -S nodejs npm
   use { "williamboman/mason.nvim"}
   use { "williamboman/mason-lspconfig.nvim" }
   -- for formatters and linters
@@ -96,6 +97,11 @@ return packer.startup(function(use)
 
   -- Buffer line
   use { "akinsho/bufferline.nvim" }
+
+  -- Markdown Preview
+  -- sudo npm install --global yarn
+  -- cd plugin file markdown-preview .local/share/nvim/site/pack/packer/start/markdown-preview.nvim/app then yarn install
+  use { "iamcco/markdown-preview.nvim" }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
