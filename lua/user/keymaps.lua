@@ -43,7 +43,7 @@ keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi<Esc>", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi<Esc>", opts)
 
 -- Insert --
--- Press jk fast to exit insert mode 
+-- Press jk fast to exit insert mode
 keymap("i", "jk", "<ESC>", opts)
 keymap("i", "Kj", "<ESC>", opts)
 
@@ -51,7 +51,7 @@ keymap("i", "Kj", "<ESC>", opts)
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
--- Press jk fast to exit Visual mode 
+-- Press jk fast to exit Visual mode
 keymap("v", "jk", "<ESC>", opts)
 keymap("v", "Kj", "<ESC>", opts)
 
@@ -60,16 +60,16 @@ keymap("v", "<A-j>", ":m .+1<CR>==", opts)
 keymap("v", "<A-k>", ":m .-2<CR>==", opts)
 keymap("v", "p", '"_dP', opts)
 
--- Visual Block 
+-- Visual Block
 -- Move text up and down
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
--- Press jk fast to exit Visual Block mode 
+-- Press jk fast to exit Visual Block mode
 keymap("x", "jk", "<ESC>", opts)
 keymap("x", "Kj", "<ESC>", opts)
 
 -- command_mode
--- Press jk fast to exit Command mode 
+-- Press jk fast to exit Command mode
 keymap("c", "jk", "<ESC>", opts)
 keymap("c", "Kj", "<ESC>", opts)
 
@@ -78,16 +78,16 @@ keymap("n", "<leader>f", ":Telescope find_files<CR>", opts)
 keymap("n", "<leader>c", ":Telescope live_grep<CR>", opts)
 
 -- Git
-keymap('n', '<leader>hs', ":Gitsigns stage_buffer<CR>",     opts)
-keymap('n', '<leader>hu', ":Gitsigns undo_stage_hunk<CR>",  opts)
-keymap('n', '<leader>hr', ":Gitsigns reset_buffer<CR>",     opts)
-keymap('n', '<leader>hp', ":Gitsigns prev_hunk<CR>",        opts)
-keymap('n', '<leader>hn', ":Gitsigns next_hunk<CR>",        opts)
-keymap('n', '<leader>hb', ":Gitsigns blame_line<CR>",       opts)
-keymap('n', '<leader>hd', ":Gitsigns diffthis<CR>",         opts)
+keymap("n", "<leader>hs", ":Gitsigns stage_buffer<CR>", opts)
+keymap("n", "<leader>hu", ":Gitsigns undo_stage_hunk<CR>", opts)
+keymap("n", "<leader>hr", ":Gitsigns reset_buffer<CR>", opts)
+keymap("n", "<leader>hp", ":Gitsigns prev_hunk<CR>", opts)
+keymap("n", "<leader>hn", ":Gitsigns next_hunk<CR>", opts)
+keymap("n", "<leader>hb", ":Gitsigns blame_line<CR>", opts)
+keymap("n", "<leader>hd", ":Gitsigns diffthis<CR>", opts)
 
 -- Markdown Preview
-keymap('n', '<C-s>', ":MarkdownPreview<CR>", opts)
+keymap("n", "<C-s>", ":MarkdownPreview<CR>", opts)
 
 -- Formatting Code
-keymap('n', '<leader>s', ":lua vim.lsp.buf.formatting_sync()<CR>", opts)
+keymap("n", "<leader>s", ":lua vim.lsp.buf.format()<CR>", opts)
