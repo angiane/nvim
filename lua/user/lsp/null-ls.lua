@@ -9,6 +9,7 @@ local formatting = null_ls.builtins.formatting
 local diagnostics = null_ls.builtins.diagnostics
 
 -- Dependencies: sudo pacman -S formatting null ls
+-- for example sudo pacman -S stylua | pip install black
 
 null_ls.setup({
 	debug = false,
