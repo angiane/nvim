@@ -91,3 +91,6 @@ keymap("n", "<C-s>", ":MarkdownPreview<CR>", opts)
 
 -- Formatting Code
 keymap("n", "<leader>s", ":lua vim.lsp.buf.format()<CR>", opts)
+
+-- Symbols-outline
+keymap("n", "<leader>i", ":SymbolsOutline<CR>", opts)
