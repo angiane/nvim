@@ -94,6 +94,9 @@ return packer.startup(function(use)
   use { "nvim-tree/nvim-web-devicons" }
   use { "nvim-tree/nvim-tree.lua" }
 
+  -- Buffer line
+  use { "akinsho/bufferline.nvim" }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
