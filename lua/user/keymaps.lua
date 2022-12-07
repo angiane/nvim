@@ -88,3 +88,6 @@ keymap('n', '<leader>hd', ":Gitsigns diffthis<CR>",         opts)
 
 -- Markdown Preview
 keymap('n', '<C-s>', ":MarkdownPreview<CR>", opts)
+
+-- Formatting Code
+keymap('n', '<leader>s', ":lua vim.lsp.buf.formatting_sync()<CR>", opts)
