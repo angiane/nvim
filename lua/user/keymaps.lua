@@ -76,3 +76,12 @@ keymap("c", "Kj", "<ESC>", opts)
 -- Telescope
 keymap("n", "<leader>f", ":Telescope find_files<CR>", opts)
 keymap("n", "<leader>c", ":Telescope live_grep<CR>", opts)
+
+-- Git
+keymap('n', '<leader>hs', ":Gitsigns stage_buffer<CR>",     opts)
+keymap('n', '<leader>hu', ":Gitsigns undo_stage_hunk<CR>",  opts)
+keymap('n', '<leader>hr', ":Gitsigns reset_buffer<CR>",     opts)
+keymap('n', '<leader>hp', ":Gitsigns prev_hunk<CR>",        opts)
+keymap('n', '<leader>hn', ":Gitsigns next_hunk<CR>",        opts)
+keymap('n', '<leader>hb', ":Gitsigns blame_line<CR>",       opts)
+keymap('n', '<leader>hd', ":Gitsigns diffthis<CR>",         opts)
