@@ -103,6 +103,12 @@ return packer.startup(function(use)
   -- cd plugin file markdown-preview .local/share/nvim/site/pack/packer/start/markdown-preview.nvim/app then yarn install
   use { "iamcco/markdown-preview.nvim" }
 
+  -- Lualine a statusline
+  use { "nvim-lualine/lualine.nvim" }
+
+  -- Indent blankline adds indentation guides 
+  use { "lukas-reineke/indent-blankline.nvim" }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
