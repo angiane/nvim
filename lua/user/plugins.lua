@@ -118,6 +118,9 @@ return packer.startup(function(use)
 
   -- Which-key
   -- use { "folke/which-key.nvim", commit = "61553aeb3d5ca8c11eea8be6eadf478062982ac9" }
+  
+  -- Speed up loading Lua modules in Neovim to improve startup time
+  use { "lewis6991/impatient.nvim", commit = "d3dd30ff0b811756e735eb9020609fa315bfbbcc" }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

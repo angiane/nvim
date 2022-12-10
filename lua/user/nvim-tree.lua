@@ -19,11 +19,6 @@ nvim_tree.setup {
   open_on_setup = false,
   open_on_tab = false,
   hijack_cursor = false,
-  quit_on_open = 0,
-  update_to_buf_dir = {
-    enable = true,
-    auto_open = true,
-  },
   update_focused_file = {
     enable = true,
     update_cwd = true,
@@ -70,7 +65,6 @@ nvim_tree.setup {
     width = 30,
     side = "left",
     hide_root_folder = false,
-    auto_resize = true,
     mappings = {
       list = {
         { key = { "l", "<CR>", "o" }, cb = tree_cb "edit" },
